@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <!----<a href="index5.html"><img src="images/logo.png"></a>---->
+            <a href="index5.html"><img src="images/theatrepic.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">AUDITIONS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>School Shows <br> 2023 - 2024 Season</h1>
+    </section>
+
+
+<section class="blog-content">
+    <h1>The Children's Theatre of Charleston Proudly Presents our 2023 - 2024 Season School Shows</h1>
+    
+    <div class="img-cont">
+        <img src="images/aladdin2.png">
+        <img src="images/mrscrooge.png">
+        <img src="images/seus.png">
+    </div>
+
+    <p>The Children's Theatre of Charleston is excited to invite you to join us for one or more of our upcoming school shows for the 2023-2024 season!  All three of our shows will be offered at 9:15 am and 11:00 am and will last approximately one hour.  Our shows are a wonderful opportunity to expose your students to live theatre performed by talented local students.  We will begin taking reservations for all of our school shows on June 1, 2023. Please contact us to reserve your spot at ctocwv@gmail.com.  Make your reservations early to assure we have seats for you.</p>
+    <p>Our exciting line up of shows this season begins with Disney Aladdin Jr. on September 28 & 29, 2023 at the Clay Center for the Arts and Sciences. Our second show will be Mr. Scrooge performed on December 7 & 8, 2023 at the Little Theatre at the Charleston Coliseum. We end our season celebrating one of our favorite authors with Seussical Jr. at the Clay Center for the Arts & Sciences on April 18 & 19, 2024.</p>
+
+    <h3>Admission:</h3>
+    <p>Admission is $5.00 per student. Teachers accompanying their classes attend our shows for free.</p>
+    <h3>Additional Adults:</h3>
+    <p>Adults (who are not official chaperones from the school) are welcome to attend the school performances if we have extra seats, however, tickets will not be sold to them until all schools have been seated. Tickets will be sold to additional adults only when available.</p>
+    <h3>Reservations:</h3>
+    <p>Please email LeeAnne Rheinlander at ctocwv@gmail.com   to reserve a date and time.  She will email you a reservation form and confirm  your reservation.   If you have questions, please email LeeAnne Rheinlander at ctocwv@gmail.com.</p>
+    <h3>CSOs:</h3>
+    <p>Content, Standards and Objectives for Children's Theatre performances are available under forms section : http://www.ctoc.org/ctoc_forms</p>
+    <h3>Bus Information:</h3>
+    <p>We will be sending out information for your bus drivers with your confirmation/receipt letter approximately two weeks before the show.</p>
+
+                <div class="comment-box">
+
+                    <h3>Have any Questions?</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Submit</button>
+                    </form>
+                </div>
+
+
+    </section>
+    
+    
+
+        <!----Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>CHILDRENS THEATRE OF CHARLESTON<br>
+                P.O. BOX 11060 CHARLESTON, WV 25339<br>
+                <A href="privacy-statement.html">PRIVACY STATEMENT</a> | COPYRIGHT © 2023<br>
+                The Official West Virginia Children's Theatre</p>  
+            <div class="icons">
+                <a href="https://www.facebook.com/ChildrensTheatreofCharleston" target="_blank"><i class="fa fa-facebook"></i></a>
+                <!---<i class="fa fa-twitter"></i>---->
+                <a href="https://www.instagram.com/ctoc_wv/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                <!---<i class="fa fa-flickr"></i>--->
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorurials</p>
+        </section>
+
+
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+</body>
+</html>

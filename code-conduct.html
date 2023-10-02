@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <!----<a href="index5.html"><img src="images/logo.png"></a>---->
+            <a href="index5.html"><img src="images/theatrepic.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">AUDITIONS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Code of Conduct</h1>
+    </section>
+
+
+<section class="coc-form">
+
+
+    <section class="coc">
+
+        <h3>To produce the best rehearsal experience and show possible, I agree to the following:</h3>
+
+        <ol>
+            <li>I will be on time, prepared according to instructions from the Director, and ready to work when called upon for every rehearsal, call and show.</li>
+            <li>I will notify the Assistant Director of any absences that may arise from unavoidable conflicts. I understand that there will be a maximum of two (2) unexcused absences. Additional unexcused absences could result in my dismissal from the show.</li>
+            <li>I will exhibit appropriate behavior at all times. I will be quiet and considerate of all those on stage while I am not. Failure to be respectful could lead to being asked to leave the rehearsal and possibly the show.</li>
+            <li>I will refrain from behaviors that threaten the physical or emotional safety of others. I will show kindness, respect, and cooperation rather than bullying or other aggressive behavior. This applies to my actions at the CTOC workshop, the performance venue and on social media.</li>
+            <li>I will wear appropriate attire to rehearsals. My shoes and clothing should be suitable for dance and movement on stage. I understand that I should not wear flip-flops, open toed shoes, strapless or halter tops, short shorts or shirts with graphic or obscene language or images. Undergarments should not be visible.</li>
+            <li>I understand that this is a child centered, family friendly environment. I will refrain from using any foul language or exhibiting inappropriate public displays of affection.</li>
+            <li>I understand that any problems associated with my behavior will be addressed by the show's Director and the CTOC Board of Directors and could result in my dismissal from the show.</li>
+            <li>I will not use tobacco (in any form: cigarettes, chewing, Vapor) alcohol, or drugs in the Theatre or rehearsal</li>
+        
+        </ol>
+
+    </section>
+
+        <section class="coc-submit">    
+            <form action="coc.php" method="POST">
+                <p>I have read the CTOC Bullying Policy:</p>
+                <div class="form-coc">
+                    <label for="childName">Child's Name:</label>
+                    <input type="text" id="childName" name="childName" placeholder="Child's Name">
+                    <label for="date">Date: <input type="date" id="date" name="date" required class="outlined"></label>
+                </div>
+        
+                <div class="form-coc">
+                    <label for="parentName">Parent/Guardian Name:</label>
+                    <input type="text" id="parentName" name="parentName" placeholder="Parent/Guardian Name">
+                    <label for="date">Date: <input type="date" id="date" name="date" required class="outlined"></label>
+                </div>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+
+
+
+</section>
+
+
+
+        <!----Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>CHILDRENS THEATRE OF CHARLESTON<br>
+                P.O. BOX 11060 CHARLESTON, WV 25339<br>
+                <A href="privacy-statement.html">PRIVACY STATEMENT</a> | COPYRIGHT © 2023<br>
+                The Official West Virginia Children's Theatre</p>  
+            <div class="icons">
+                <a href="https://www.facebook.com/ChildrensTheatreofCharleston" target="_blank"><i class="fa fa-facebook"></i></a>
+                <!---<i class="fa fa-twitter"></i>---->
+                <a href="https://www.instagram.com/ctoc_wv/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                <!---<i class="fa fa-flickr"></i>--->
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorurials</p>
+        </section>
+
+
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+</body>
+</html>

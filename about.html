@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <!----<a href="index5.html"><img src="images/logo.png"></a>--->
+            <a href="index.html"><img src="images/theatrepic.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">AUDITIONS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!---About us Content--->
+    
+    <section>
+
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>What is the Children's Theatre of Charleston?</h1>
+                    <p>The Children's Theatre of Charleston serves and enriches our community, inspiring young people to create fulfilling and productive lives through the art of theater.
+                        Every season, CTOC performs a series of shows for the general public and for audiences of school children and groups, who take a break in their day to experience the magic of live theatre. Giving children and families the opportunity to share the total theatre experience, CTOC is open to all children, regardless of age, race, religion, or nationality.
+                        All West Virginia children may participate as long as they meet the requirement of attendance.</p>
+                    </p>
+
+                    <h2>History</h2>
+                    <p>In May of 1932, Miss Sara Spencer, a teacher and advocate for children's theatre programs, started a theatre group as an outgrowth of her drama class. The theatre group's first full season, the 1932-33 season, included several full length and one-act shows. From its inception, the group received a great deal of support from the Junior League of Charleston.
+                        <br>
+                        In 1945, that theater group became incorporated and was chartered with the state of West Virginia and named the Children's Theatre of Charleston, Incorporated. In 1961 Governor W.W. Barron designated the Children's Theatre of Charleston as The Official West Virginia Children's Theatre. Thousands of children and adults have participated in Children's Theatre Productions over the years.View the history of our past performances here and select archives here.
+                    </p>
+
+                    <h2>Board of Directors</h2>
+                    <h3>Officers</h3>
+                    <ul>
+                        <li>Johanna Miesner, President</li>
+                        <li>Casey Peterson, 1st Vice-President</li>
+                        <li>Kit Reed, 2nd Vice-President</li>
+                        <li>Heather Abbott</li>
+                        <li>Emilie Couch, Secretary</li>
+                    </ul>
+
+                    <br>
+
+                    <h3>Members</h3>
+                    <ul>
+                        <li>Megan Diehl</li>
+                        <li>Jan Johnson</li>
+                        <li>Ariana Kincaid</li>
+                        <li>Rebecca Pratt</li>
+                        <li>Kristi Silkwood</li>
+                        <li>Chris Welty</li>
+                        <li>Alex Wildon</li>
+                        <li>Natalie Tennant</li>
+                    </ul>
+
+                    <br>
+
+                    <h4>LeeAnne Rheinlander - General Manager</h4>
+
+                    <!--   <a href="" class="hero-btn red-btn">Explore Now</a>  -->
+                </div>
+                <div class="about-col">
+                    <img src="images/pic3.jpg">
+                    <img src="images/pic2.jpg">
+                    <img src="images/pic6.jpeg">
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+    </section>
+
+    
+
+        <!----Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>CHILDRENS THEATRE OF CHARLESTON<br>
+                P.O. BOX 11060 CHARLESTON, WV 25339<br>
+                <A href="privacy-statement.html">PRIVACY STATEMENT</a> | COPYRIGHT © 2023<br>
+                The Official West Virginia Children's Theatre</p>  
+            <div class="icons">
+                <a href="https://www.facebook.com/ChildrensTheatreofCharleston" target="_blank"><i class="fa fa-facebook"></i></a>
+                <!---<i class="fa fa-twitter"></i>---->
+                <a href="https://www.instagram.com/ctoc_wv/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                <!---<i class="fa fa-flickr"></i>--->
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorurials</p>
+        </section>
+
+
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script> 
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <!----<a href="index5.html"><img src="images/logo.png"></a>---->
+            <a href="index5.html"><img src="images/theatrepic.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">AUDITIONS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Photo Release</h1>
+    </section>
+
+    
+    <!-- Photo Release Content -->
+<div class="content-wrapper">
+    <form action="process_form.php" method="POST">
+            <p>As a part of the audition process, a photograph will be taken for use by the Director in casting. Additionally, photographs are taken of individuals cast in the production during rehearsals and productions for use in advertising, promotions, etc. hereby give Children's Theatre of Charleston ("CTOC") permission to publish in print, electronic, or video format the likeness or image of <input type="text" id="name" name="name" placeholder="Name">.</p>
+            <p>I hereby release all claims against the CTOC with respect to copyright ownership and publication, including any claim for compensation related to the use of the materials.</p>
+        <!-- Form Groups for MINOR'S NAME, YOUR NAME, Signature, and DATE -->
+        <div class="form-group" id="minor-name">
+            <label for="minorName">MINOR'S NAME:</label>
+            <input type="text" id="minorName" name="minorName" placeholder="MINOR'S NAME">
+        </div>
+
+        <div class="form-group">
+            <label for="yourName">YOUR NAME:</label>
+            <input type="text" id="yourName" name="yourName" placeholder="YOUR NAME">
+        </div>
+
+        <!-- Signature Canvas -->
+        <div class="form-group">
+            <label>Signature:</label>
+            <div class="signature-container">
+                <canvas id="signatureCanvas" width="400" height="200"></canvas>
+                <button type="button" id="clearSignature">Clear Signature</button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date: <input type="date" id="date" name="date" required class="outlined"></label>
+        </div>
+
+        <section class="general-guidelines">
+            <h2>General Guidelines</h2>
+            <p>General Guidelines: It is recommended that a release be obtained when photographing or videotaping a minor (under 18). Parent or guardian signatures are required; signatures of minors are not sufficient. When images are published, CTOC will take cautionary steps to provide minimum identifying information and will not use specific street or mailing addresses, e-mail addresses, or phone numbers. If you have any question, please contact CTOC.</p>
+        </section>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+   
+
+    <!-- JavaScript for Signature -->
+    <script>
+        const canvas = document.getElementById("signatureCanvas");
+        const clearButton = document.getElementById("clearSignature");
+        const signatureInput = document.getElementById("signatureInput");
+        const ctx = canvas.getContext("2d");
+        let isDrawing = false;
+
+        canvas.addEventListener("mousedown", () => {
+            isDrawing = true;
+            ctx.beginPath();
+        });
+
+        canvas.addEventListener("mousemove", (e) => {
+            if (!isDrawing) return;
+            ctx.lineWidth = 2;
+            ctx.lineCap = "round";
+            ctx.strokeStyle = "#000"; // Signature color
+            ctx.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+            ctx.stroke();
+        });
+
+        canvas.addEventListener("mouseup", () => {
+            isDrawing = false;
+        });
+
+        clearButton.addEventListener("click", () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        // Handle form submission
+        document.querySelector("form").addEventListener("submit", () => {
+            // Convert canvas content to a data URL and set it in the hidden input
+            signatureInput.value = canvas.toDataURL();
+        });
+    </script>
+
+        <!----Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>CHILDRENS THEATRE OF CHARLESTON<br>
+                P.O. BOX 11060 CHARLESTON, WV 25339<br>
+                <A href="privacy-statement.html">PRIVACY STATEMENT</a> | COPYRIGHT © 2023<br>
+                The Official West Virginia Children's Theatre</p>  
+            <div class="icons">
+                <a href="https://www.facebook.com/ChildrensTheatreofCharleston" target="_blank"><i class="fa fa-facebook"></i></a>
+                <!---<i class="fa fa-twitter"></i>---->
+                <a href="https://www.instagram.com/ctoc_wv/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                <!---<i class="fa fa-flickr"></i>--->
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorurials</p>
+        </section>
+
+
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+</body>
+</html>

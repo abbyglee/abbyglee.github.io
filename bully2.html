@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <!----<a href="index5.html"><img src="images/logo.png"></a>--->
+            <a href="index5.html"><img src="images/theatrepic.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">AUDITIONS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Children's Theatre of Charleston (CTOC) Bullying Policy</h1>
+    </section>
+
+
+<section class="bullying-policy">
+
+        <h2>Expectation:</h2>
+        <p>CTOC takes bullying very seriously and there will be consequences if you are found to be bullying. If you are or witness someone else being bullied, notify the Director, Assistant Director, BTS Advisor(s), or a CTOC Board or Director member.</p>
+
+    <section class="bully-offense">
+        <h2>When bullying is perceived to have occurred during a production:</h2>
+
+<ol>
+    <li>1st offense
+        <ul>
+            <li>Talk with an individual and their parent(s) to give a warning.</li>
+            <li>Done by Director or Assistant Director, and a CTOC office. BTS activities - Teen advisor and CTOC officer.</li>
+            <li>Individual will be on probation for three productions.</li>
+            <li>Document on Bullying worksheet for the individual.</li>
+        </ul>
+    </li>
+
+    <li>2nd offense
+        <ul>
+            <li>Removed from activity/show.</li>
+            <li>Parent notified.</li>
+            <li>Document on Bullying worksheet for the individual.</li>
+            <li>Continued probation, to encompass three productions from removal, not including the show removed from.</li>
+        </ul>
+    </li>
+
+    <li>3rd offense
+        <ul>
+            <li>No longer welcome at Children's Theatre or BTS.</li>
+            <li>Parent notified.</li>
+            <li>Document on Bullying worksheet for the individual.</li>
+        </ul>
+    </li>
+
+    <li>Probation is a period in which one should be on one's best behavior; whatever the most recent step taken during a probationary period is, an additional act of bullying is accelerated to the next level.</li>
+                    <ul>a.   If one is on probation and is found to have engaged in bullying behavior in a production separate from the production in which one was placed on probation, one will be suspended from the current production.</ul>
+                    <ul>b.   If one has been suspended from a production and remains on probation and is in a separate CTOC or BTS production, and if found to have engaged in bullying behavior, one will be suspended from the current production and will no longer be welcome at CTOC.</ul>
+    <br>
+       
+    <li>When bullying is perceived to have occurred during BTS activities: Same consequences, probation period will be six months.</li>
+    <li>After 3rd strike, individual will sit out of CTOC activities for 1 year. Individual would then write a letter to the BOD expressing their desire to be reinstated and examples of how their behavior has improved. One letter of recommendation would also be required.</li>
+</ol> 
+</section>
+
+    <section class="bully-submit">
+        <p>I have read the CTOC Bullying Policy:</p>
+
+        <form action="bully_form.php" method="POST">
+            <div class="form-group">
+                <label for="childName">Child's Name:</label>
+                <input type="text" id="childName" name="childName" placeholder="Child's Name">
+                <label for="date">Date: <input type="date" id="date" name="date" required class="outlined"></label>
+            </div>
+    
+            <div class="form-group">
+                <label for="parentName">Parent/Guardian Name:</label>
+                <input type="text" id="parentName" name="parentName" placeholder="Parent/Guardian Name">
+                <label for="date">Date: <input type="date" id="date" name="date" required class="outlined"></label>
+            </div>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</section>
+
+
+    
+
+        <!----Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>CHILDRENS THEATRE OF CHARLESTON<br>
+                P.O. BOX 11060 CHARLESTON, WV 25339<br>
+                <A href="privacy-statement.html">PRIVACY STATEMENT</a> | COPYRIGHT © 2023<br>
+                The Official West Virginia Children's Theatre</p>  
+            <div class="icons">
+                <a href="https://www.facebook.com/ChildrensTheatreofCharleston" target="_blank"><i class="fa fa-facebook"></i></a>
+                <!---<i class="fa fa-twitter"></i>---->
+                <a href="https://www.instagram.com/ctoc_wv/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                <!---<i class="fa fa-flickr"></i>--->
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorurials</p>
+        </section>
+
+
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script> 
+
+
+
+</body>
+</html>

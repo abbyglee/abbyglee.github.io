@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <!----<a href="index5.html"><img src="images/logo.png"></a>---->
+            <a href="index5.html"><img src="images/theatrepic.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">AUDITIONS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Medical Release Form</h1>
+    </section>
+
+
+<section class="medical-form">
+<div class="medical-container">
+    <p>The custodial parent of each child cast member must sign and email this form to CTOC.</p>
+
+    <form id="medicalForm" action="medicalform.php" method="POST">
+
+        <div class="medical-form">
+            <label for="parentName">I,
+                <input type="text" id="parentName" name="parentName" required>
+                have given permission, and I am the person authorized to give permission, for my child,
+                <input type="text" id="childName" name="childName" required>
+                to participate in the Children's Theatre of Charleston's 2023-2024 Season.
+            </label>
+        </div>
+        
+        <h2>In case of emergency, I can be reached at:</h2>
+        <div class="medical-form">
+            <label for="emergencyDay">Day: <input type="text" id="emergencyDay" name="emergencyDay" required></label>
+            <label for="emergencyEvening">Evening: <input type="text" id="emergencyEvening" name="emergencyEvening" required></label>
+            <label for="emergencyOther">Other: <input type="text" id="emergencyOther" name="emergencyOther"></label>
+        </div>
+
+
+        <h2>The participant's physician:</h2>
+        <div class="medical-form">
+            <label for="participantPhysicianName">Name: <input type="text" id="participantPhysicianName" name="participantPhysicianName" required></label>
+            <label for="participantPhysicianPhone">Phone: <input type="tel" id="participantPhysicianPhone" name="participantPhysicianPhone" required></label>
+        </div>
+
+        <div class="medical-form">
+            <h2>The participant's dentist or orthodontist is:</h2>
+            <label for="participantDentistName">Name: <input type="text" id="participantDentistName" name="participantDentistName" required></label>
+            <label for="participantDentistPhone">Phone: <input type="tel" id="participantDentistPhone" name="participantDentistPhone" required></label>
+        </div>
+
+        <div class="medical-form">
+            <h2>Insurance Information:</h2>
+            <label for="insuranceCompany">Company: <input type="text" id="insuranceCompany" name="insuranceCompany" required></label>
+            <label for="policyNumber">Policy Number: <input type="text" id="policyNumber" name="policyNumber" required></label>
+            <label for="employerGroup">Employer or Group: <input type="text" id="employerGroup" name="employerGroup" required></label>
+            <label for="subscriberInfo">Name of Subscriber, and relationship to child: <input type="text" id="subscriberInfo" name="subscriberInfo" required></label>
+        </div>
+
+        <h2>Medical Information:</h2>
+        <div class="medical-form">
+           <p>Please check beside any of the following for which the participant has a history:</p> 
+            <br>
+            <input type="checkbox" id="hayfever" name="medicalHistory" value="Hayfever">
+            <label for="hayfever">Hayfever</label>
+            <input type="checkbox" id="convulsions" name="medicalHistory" value="Convulsions">
+            <label for="convulsions">Convulsions</label>
+            <input type="checkbox" id="lungProblems" name="medicalHistory" value="Lung Problems">
+            <label for="lungProblems">Lung Problems</label>
+            <input type="checkbox" id="beeStings" name="medicalHistory" value="Bee Stings">
+            <label for="beeStings">Bee Stings</label>
+            <input type="checkbox" id="ulcers" name="medicalHistory" value="Ulcers">
+            <label for="ulcers">Ulcers</label>
+            <input type="checkbox" id="bloodPressure" name="medicalHistory" value="Blood Pressure Problems">
+            <label for="bloodPressure">Blood Pressure Problems</label>
+            <input type="checkbox" id="fainting" name="medicalHistory" value="Fainting">
+            <label for="fainting">Fainting</label>
+            <input type="checkbox" id="cancer" name="medicalHistory" value="Cancer">
+            <label for="cancer">Cancer</label>
+            <input type="checkbox" id="kidneyProblems" name="medicalHistory" value="Kidney Problems">
+            <label for="kidneyProblems">Kidney Problems</label>
+            <input type="checkbox" id="asthma" name="medicalHistory" value="Asthma">
+            <label for="asthma">Asthma</label>
+            <input type="checkbox" id="heartDisease" name="medicalHistory" value="Heart Disease">
+            <label for="heartDisease">Heart Disease</label>
+            <input type="checkbox" id="diabetes" name="medicalHistory" value="Diabetes">
+            <label for="diabetes">Diabetes</label>
+            <input type="checkbox" id="poisonIvy" name="medicalHistory" value="Poison Ivy">
+            <label for="poisonIvy">Poison Ivy</label>
+            <input type="checkbox" id="penicillinAllergy" name="medicalHistory" value="Penicillin Allergy">
+            <label for="penicillinAllergy">Penicillin Allergy</label> <br>
+            <input type="checkbox" id="sulfaAllergy" name="medicalHistory" value="Sulfa Allergy"> 
+            <label for="sulfaAllergy">Sulfa Allergy</label>
+        <br>
+        
+            <label for="recentSurgery">Recent Surgery? <input type="text" id="recentSurgery" name="recentSurgery"></label>
+            <label for="foodAllergies">Food Allergies: <input type="text" id="foodAllergies" name="foodAllergies"></label>
+            <label for="currentMedications">Current Medications: <input type="text" id="currentMedications" name="currentMedications"></label>
+</div>
+
+            <h2>Authorization:</h2>
+            <p>I authorize the staff of this event to seek emergency medical treatment should the need, in their opinion, arise.</p>
+            <label for="parentSignature">Signed: <input type="text" id="parentSignature" name="parentSignature" required class="outlined"></label>
+            <label for="printedName">Please Print Name and relationship to child: <input type="text" id="printedName" name="printedName" required class="outlined"></label>
+
+                <!-- Signature Canvas -->
+                <div class="form-group">
+                    <label>Signature:</label>
+                    <div class="signature-container">
+                        <canvas id="signatureCanvas" width="400" height="200"></canvas>
+                        <button type="button" id="clearSignature" class="outlined">Clear Signature</button>
+                    </div>
+                </div>
+
+                <label for="date">Date: <input type="date" id="date" name="date" required class="outlined"></label>
+
+                <!-- (Add more sections and form fields as needed) -->
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript for Signature -->
+    <script>
+        const canvas = document.getElementById("signatureCanvas");
+        const clearButton = document.getElementById("clearSignature");
+        const signatureInput = document.getElementById("signatureInput");
+        const ctx = canvas.getContext("2d");
+        let isDrawing = false;
+
+        canvas.addEventListener("mousedown", () => {
+            isDrawing = true;
+            ctx.beginPath();
+        });
+
+        canvas.addEventListener("mousemove", (e) => {
+            if (!isDrawing) return;
+            ctx.lineWidth = 2;
+            ctx.lineCap = "round";
+            ctx.strokeStyle = "#000"; // Signature color
+            ctx.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+            ctx.stroke();
+        });
+
+        canvas.addEventListener("mouseup", () => {
+            isDrawing = false;
+        });
+
+        clearButton.addEventListener("click", () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        // Handle form submission
+        document.querySelector("form").addEventListener("submit", () => {
+            // Convert canvas content to a data URL and set it in the hidden input
+            signatureInput.value = canvas.toDataURL();
+        });
+    </script>
+
+
+
+        <!----Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>CHILDRENS THEATRE OF CHARLESTON<br>
+                P.O. BOX 11060 CHARLESTON, WV 25339<br>
+                <A href="privacy-statement.html">PRIVACY STATEMENT</a> | COPYRIGHT © 2023<br>
+                The Official West Virginia Children's Theatre</p>  
+            <div class="icons">
+                <a href="https://www.facebook.com/ChildrensTheatreofCharleston" target="_blank"><i class="fa fa-facebook"></i></a>
+                <!---<i class="fa fa-twitter"></i>---->
+                <a href="https://www.instagram.com/ctoc_wv/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                <!---<i class="fa fa-flickr"></i>--->
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorurials</p>
+        </section>
+
+
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <!----<a href="index5.html"><img src="images/logo.png"></a>--->
+            <a href="index.html"><img src="images/theatrepic.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">AUDITIONS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Children's Theatre of Charleston Defines Bullying</h1>
+    </section>
+
+
+
+<section class="bully">
+    <div class="bully-sec">
+        <h1>Bullying</h1>
+        <p>Bullying seeks to harm, intimidate, or coerce someone perceived as vulnerable.</p>
+        <p>Bullies use their power - such as physical strength, access to embarrassing information, or popularity - to control or harm others.</p>
+        <p><strong>Repetition:</strong> Bullying behaviors happen more than once or have the potential to happen more than once.</p>
+    </div>
+
+
+    
+<div class="bully-type">
+    <h2>Types of Bullying</h2>
+    <h3>Verbal Bullying</h3>
+    <p>Verbal bullying is saying or writing mean things. Verbal bullying includes:</p>
+    <ul>
+        <li>Teasing</li>
+        <li>Name-calling</li>
+        <li>Inappropriate sexual comments</li>
+        <li>Taunting</li>
+        <li>Threatening to cause harm</li>
+    </ul>
+</div>
+
+<div class="bully-type">
+    <h3>Social Bullying</h3>
+    <p>Social bullying, sometimes referred to as relational bullying, involves hurting someone's reputation or relationships. Social bullying includes:</p>
+    <ul>
+        <li>Leaving someone out on purpose</li>
+        <li>Telling other children not to be friends with someone</li>
+        <li>Spreading rumors about someone</li>
+        <li>Embarrassing someone in public</li>
+    </ul>
+</div>
+
+<div class="bully-type">
+    <h3>Physical Bullying</h3>
+    <p>Physical bullying involves hurting a person's body or possessions. Physical bullying includes:</p>
+    <ul>
+        <li>Hitting/kicking/pinching</li>
+        <li>Spitting</li>
+        <li>Tripping/pushing</li>
+        <li>Taking or breaking someones things</li>
+        <li>Making mean or rude hand gestures</li>
+    </ul>
+</div>
+
+<div class="bully-type">
+    <h3>Cyberbullying</h3>
+    <p>Cyberbullying is bullying that takes place over digital devices like cells phones, computers, and tablets. Cyberbullying can occur through SMS, Text, and apps, or online in social media, forums, or gaming where people can view, participate in, or share content. Cyberbullying includes sending, posting, or sharing negative, harmful, false, or mean content to or about someone else. It can include sharing or threatening to share personal or private information about someone else causing embarrassment or humiliation. Some cyberbullying crosses the line into unlawful or criminal behavior.</p>
+
+    <h4>The most common places where cyberbullying occurs are:</h4>
+    <ul>
+        <li>Social Media, such as Facebook, Instagram, Snapchat, and Twitter</li>
+        <li>SMS (Short Message Service) also known as Text Message sent through devices</li>
+        <li>Instant Message (via devices, email provider services, apps, and social media messaging features)</li>
+        <li>Email</li>
+    </ul>
+
+    <p><strong>Perception of words/actions -</strong> while you may think you are joining or having fun, another person may interpret these word/actions as bullying</p>
+</div>
+
+<section class="bully-submit">
+    <p>I have read the CTOC Bullying Policy:</p>
+
+    <form action="bully_form2.php" method="POST">
+        <div class="form-group">
+            <label for="childName">Child's Name:</label>
+            <input type="text" id="childName" name="childName" placeholder="Child's Name">
+            <label for="date">Date: <input type="date" id="date" name="date" required class="outlined"></label>
+        </div>
+
+        <div class="form-group">
+            <label for="parentName">Parent/Guardian Name:</label>
+            <input type="text" id="parentName" name="parentName" placeholder="Parent/Guardian Name">
+            <label for="date">Date: <input type="date" id="date" name="date" required class="outlined"></label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</section>
+
+    
+
+        <!----Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>CHILDRENS THEATRE OF CHARLESTON<br>
+                P.O. BOX 11060 CHARLESTON, WV 25339<br>
+                <A href="privacy-statement.html">PRIVACY STATEMENT</a> | COPYRIGHT © 2023<br>
+                The Official West Virginia Children's Theatre</p>  
+            <div class="icons">
+                <a href="https://www.facebook.com/ChildrensTheatreofCharleston" target="_blank"><i class="fa fa-facebook"></i></a>
+                <!---<i class="fa fa-twitter"></i>---->
+                <a href="https://www.instagram.com/ctoc_wv/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                <!---<i class="fa fa-flickr"></i>--->
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorurials</p>
+        </section>
+
+
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script> 
+
+
+
+</body>
+</html>

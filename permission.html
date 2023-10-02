@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class = "sub-header">
+        <nav>
+            <!----<a href="index5.html"><img src="images/logo.png"></a>---->
+            <a href="index5.html"><img src="images/theatrepic.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">AUDITIONS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Permission Form and Liability Waiver</h1>
+    </section>
+
+
+    <h2>Parents of cast members please sign and return this Permission Form AND the Medical Release Form by email to CTOC.</h2>
+
+    <form action="permission.php" method="POST">
+        <p>I give permission for myself or my child, <input type="text" name="name" required>, to participate in the Children's Theatre of Charleston's 2023-2024 Season.</p>
+
+        <br>
+        <p>I understand that theater-related activities have inherent risks of injury, and, being fully aware of the risks, I consent to have myself or my child (children) participate in the activities offered by Children's Theatre of Charleston (CTOC) and on behalf of myself, my heirs, executors, agents, assigns and representatives, hereby indemnify, release and forever hold harmless CTOC, a non-profit corporation, as well as its directors, employees and agents, from any and all claims of liability arising from any accident, personal injury, death, or property loss or damage sustained by myself or my child (children) while participating in CTOC activities.</p>
+
+        <br>
+
+        <div class="form-section">
+            <label for="parentGuardian">Parent or Guardian:</label>
+            <input type="text" id="parentGuardian" name="parentGuardian" required>
+        </div>
+
+        <div class="form-section">
+            <label for="printName">Please Print Name:</label>
+            <input type="text" id="printName" name="printName" required>
+        </div>
+
+        <div class="form-section">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-section">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+
+        <div class="form-section">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <label for="zipCode">Zip Code:</label>
+            <input type="text" id="zipCode" name="zipCode" required>
+        </div>
+
+        <div class="form-section">
+            <label for="cellPhone">Cell Phone:</label>
+            <input type="tel" id="cellPhone" name="cellPhone" required> <br>
+            <label for="workPhone">Work Phone:</label>
+            <input type="tel" id="workPhone" name="workPhone" required>
+        </div>
+
+        <div class="form-section">
+            <label for="childPhone">Child's Phone:</label>
+            <input type="tel" id="childPhone" name="childPhone" required>
+        </div>
+
+        <div class="form-section">
+            <label for="parentEmail">Parent's e-mail address:</label>
+            <input type="email" id="parentEmail" name="parentEmail" required>
+        </div>
+
+        <div class="form-section">
+            <label for="childEmail">Child's e-mail address:</label>
+            <input type="email" id="childEmail" name="childEmail" required>
+        </div>
+
+        <p>CTOC will not release your e-mail to any other organization. We may use it in the future to let you know about auditions and workshops.</p>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+        <!----Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>CHILDRENS THEATRE OF CHARLESTON<br>
+                P.O. BOX 11060 CHARLESTON, WV 25339<br>
+                <A href="privacy-statement.html">PRIVACY STATEMENT</a> | COPYRIGHT © 2023<br>
+                The Official West Virginia Children's Theatre</p>  
+            <div class="icons">
+                <a href="https://www.facebook.com/ChildrensTheatreofCharleston" target="_blank"><i class="fa fa-facebook"></i></a>
+                <!---<i class="fa fa-twitter"></i>---->
+                <a href="https://www.instagram.com/ctoc_wv/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                <!---<i class="fa fa-flickr"></i>--->
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorurials</p>
+        </section>
+
+
+
+    <!-----JavaScript for Toggle Menu----->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+
+</body>
+</html>
