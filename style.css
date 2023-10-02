@@ -1245,3 +1245,12 @@ button[type="submit"]:hover, #clearSignature:hover {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+.perm h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: black;
+}
