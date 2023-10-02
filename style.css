@@ -594,12 +594,8 @@ h5{
     align-items: center;
     gap: 20px;
     padding-bottom: 20px;
-}
-
-.blog-content .img-cont{
     max-width: 100%;
     height: auto;
-}
 
 .comment-box{
     border: 1px solid #ccc;
@@ -632,8 +628,14 @@ h5{
 @media(max-width: 700px){
     .blog-content .img-cont{
         flex-direction: column;
+        text-align: center;
     }
 
+    .blog-content .img-cont img{
+        max-width: 100%;
+        height: auto;
+    }
+    
     .blog-content{
         max-width: 80%;
     }
