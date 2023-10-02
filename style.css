@@ -71,6 +71,17 @@ nav img{
     font-size: 62px;
 }
 
+.text-box h3{
+    font-size: 40px;
+    color: #fff;
+}
+.text-box h4{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: #fff;
+}
+
+
 .text-box p{
     margin: 10px 0 40px;
     font-size: 14px;
@@ -102,6 +113,12 @@ nav .fa{
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
+    }
+    .text-box h3{
+        font-size: 15px;
+    }
+    .text-box h4{
+        font-size: 15px;
     }
     .nav-links ul li{
        display: block;
