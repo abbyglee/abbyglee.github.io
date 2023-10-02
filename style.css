@@ -635,7 +635,13 @@ h5{
 .comment-form button{
     margin: 10px 0;
 }
-
+    
+.blog-content .img-cont img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+    
 @media(max-width:700px){
     .sub-header h1{
         font-size: 24px;
