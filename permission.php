@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Now you can perform actions with the form data as needed
     // For example, you can save it to a database or send email notifications
     // Here's a simple example of sending an email notification:
-    $to = "your_email@example.com"; // Change this to your email address
+    $to = "abigaillee@ucwv.edu"; // Change this to your email address
     $subject = "Form Submission from CTOC Website";
     $message = "Name: $name\n";
     $message .= "Parent or Guardian: $parentGuardian\n";
