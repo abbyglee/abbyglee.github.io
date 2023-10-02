@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // For sending email, you can use PHP's mail() function or a library like PHPMailer
 
     // Example of sending an email
-    $to = "your@email.com";
+    $to = "abigaillee@ucwv.edu";
     $subject = "Medical Release Form Submission";
     $message = "Parent Name: $parentName\nChild Name: $childName\n"; // Add other fields as needed
     $headers = "From: webmaster@example.com"; // Change this to your email address
